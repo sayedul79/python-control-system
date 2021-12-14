@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.ticker import AutoMinorLocator
 
 #read dataset
 tc_raw=pd.read_csv("D:\Extra Knowledge\HP-NPC\dataset/EEE364_exp3_f25%_A40%_offset40%.csv")
@@ -86,6 +87,10 @@ ax3.plot(tc_fil2.TimeStamp, tc_fil2.Voltage_Mul, color="DarkOrange", linewidth=2
 
 
 for ax in [ax1, ax2, ax3]:
+    ax.xaxis.set_minor_locator(AutoMinorLocator())
+    ax.yaxis.set_minor_locator(AutoMinorLocator())
+    ax.grid(which='major',color='green', alpha=1.0, linewidth=1.2)
+    ax.grid(which='minor',color="grey", alpha=0.3)
     # Move the left and bottom spines to x = 0 and y = 0, respectively.
     ax.spines["left"].set_position(("data", 0))
     ax.spines["bottom"].set_position(("data", 0))

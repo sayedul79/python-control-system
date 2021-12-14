@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.ticker import AutoMinorLocator
 #plt.xkcd()
 
 freq_2=0.2
@@ -128,7 +129,8 @@ step27_tex=r"$f=0.2 Hz$, $A=20\%$, $K_p=3.6$"
 ax27.text(40, -10, step27_tex, fontdict=font, fontsize=20)
 
 for ax in [ax2, ax6, ax7, ax11, ax13, ax18, ax27]:
-    
+    ax.xaxis.set_minor_locator(AutoMinorLocator())
+	ax.yaxis.set_minor_locator(AutoMinorLocator())
     ax.set_facecolor("#F8E0C1")
     # Move the left and bottom spines to x = 0 and y = 0, respectively.
     ax.spines["left"].set_position(("data", 0))
