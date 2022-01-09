@@ -6,17 +6,27 @@ from matplotlib.ticker import AutoMinorLocator
 raw=pd.read_csv("D:\L-3 T-2\python-control-system\python-control-system\dataset/exp9-group-1-2.csv")
 remove_noise=raw.loc[4006:, :]#Remove unwanted position(%) data
 #Select desired dataset
-df200to230=remove_noise[(remove_noise.TimeStamp>200) & (remove_noise.TimeStamp<=230)]
-df200to215=remove_noise[(remove_noise.TimeStamp>200) & (remove_noise.TimeStamp<=215)]
-#plot
+position_ref=remove_noise[(remove_noise.TimeStamp>200) & (remove_noise.TimeStamp<=230)]
+speed=remove_noise[(remove_noise.TimeStamp>200) & (remove_noise.TimeStamp<=215)]
+following_error=remove_noise[(remove_noise.TimeStamp>200) & (remove_noise.TimeStamp<=210)]
+#plot time vs position
 fig, ax1=plt.subplots()
-ax1.plot(df200to230.TimeStamp, df200to230.Position, lw=2, color="DarkBlue")
+ax1.plot(position_ref.TimeStamp, position_ref.Position, lw=2, color="DarkBlue")
+#plot time vs reference
 fig, ax2=plt.subplots()
-ax2.plot(df200to230.TimeStamp, df200to230.Reference, lw=2, color="DarkOrange")
+ax2.plot(position_ref.TimeStamp, position_ref.Reference, lw=2, color="DarkOrange")
+#position and reference in same plot
 fig, ax3=plt.subplots()
-ax3.plot(df200to215.TimeStamp, df200to215.Speed, color="DarkRed")
-axes_list=[ax1, ax2, ax3]
-ylabel=["Position(%)", "Reference", "Speed"]
+ax3.plot(position_ref.TimeStamp, position_ref.Reference, lw=2, color="DarkOrange", label="Reference")
+ax3.plot(position_ref.TimeStamp, position_ref.Position, lw=2, color="DarkBlue", label="Position")
+#plot time vs speed
+fig, ax4=plt.subplots()
+ax4.plot(speed.TimeStamp, speed.Speed, color="DarkRed")
+#plot time vs following error
+fig, ax5=plt.subplots()
+ax5.plot(following_error.TimeStamp, following_error.Error, lw=2, color="DarkGreen")
+axes_list=[ax1, ax2, ax3, ax4, ax5]
+ylabel=["Position(%)", "Reference", None, "Speed", "Following error"]
 for ax, ylabel in zip(axes_list, ylabel):
 	ax.xaxis.set_minor_locator(AutoMinorLocator(3))
 	ax.yaxis.set_minor_locator(AutoMinorLocator(3))
@@ -39,4 +49,5 @@ for ax, ylabel in zip(axes_list, ylabel):
 
 	ax.grid(which="major", color="k", alpha=0.7)
 	ax.grid(which="minor", color="gray", alpha=0.3)
+ax3.legend(loc="upper center")
 plt.show()
