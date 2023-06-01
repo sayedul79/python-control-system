@@ -1,4 +1,4 @@
-## :\u2112: Laplace Transform
+## &#x2112; Laplace Transform
 | No. | Experiment Name |
 |-----|----------------------------------------------------------------|
 |01|Equipment and Software Familiarization |
