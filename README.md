@@ -32,12 +32,12 @@ This project requires the following Python packages: `numpy`, `pandas`, `matplot
 ### Lab Work
 | No. | Experiment Name |
 |-----|----------------------------------------------------------------|
-|01|Equipment and Software Familiarization |
-|02|Open Loop Servo Motor Static Characteristics |
-|03|Open Loop Servo Motor Transient Characteristics |
-|04|Servo Closed Loop Speed Control- Steady State Characteristics |
-|05|Servo Closed Loop Speed Control- Transient Characteristics and Disturbances |
-|06|Motor Shaft Angular Position Control |
-|07|Linear Position Sensing |
-|08| Linear Position Control |
-|09|Following Error in a Linear Position Control System |
+|01|Equipment and Software Familiarization [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/Experiment%201_2.pdf) |
+|02|Open Loop Servo Motor Static Characteristics [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/Experiment%202.pdf)|
+|03|Open Loop Servo Motor Transient Characteristics [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/experiment%203.pdf)|
+|04|Servo Closed Loop Speed Control- Steady State Characteristics [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/experiment%204.pdf)|
+|05|Servo Closed Loop Speed Control- Transient Characteristics and Disturbances [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/experiment%205.pdf)|
+|06|Motor Shaft Angular Position Control [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/experiment%206.pdf)|
+|07|Linear Position Sensing [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/experiment%207.pdf)|
+|08| Linear Position Control [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/experiment%208.pdf)|
+|09|Following Error in a Linear Position Control System [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/experiment%209.pdf)|
