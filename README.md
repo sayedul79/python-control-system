@@ -1,5 +1,5 @@
 ### Installation
-This project requires the following Python packages: 'numpy', 'pandas', 'matplotlib', 'control', 'sympy', 'ipywidgets' and 'bokeh'
+This project requires the following Python packages: `numpy`, `pandas`, `matplotlib`, `control`, `sympy`, `ipywidgets` and `bokeh`
 
 ### Symbolic Mathematical Operation in Python
 [Jupyter notebook](https://github.com/sayedul79/python-control-system/blob/main/symbolic_python.ipynb)
