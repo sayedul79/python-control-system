@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.ticker import AutoMinorLocator
 #Read raw datasset 
-raw=pd.read_csv("D:\L-3 T-2\python-control-system\python-control-system\dataset/exp9-group-1-2.csv")
+raw=pd.read_csv("https://raw.githubusercontent.com/sayedul79/python-control-system/main/dataset/exp9-group-1-2.csv")
 remove_noise=raw.loc[4006:, :]#Remove unwanted position(%) data
 #Select desired dataset
 position_ref=remove_noise[(remove_noise.TimeStamp>200) & (remove_noise.TimeStamp<=230)]

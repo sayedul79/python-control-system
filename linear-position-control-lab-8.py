@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import AutoMinorLocator
 
 #read ziegler nichols method dataset for rail
-rail_ziegler=pd.read_csv("D:\L-3 T-2\python-control-system\python-control-system\dataset/exp8-rail-ziegler-nichols-group-5.csv", sep="\t")
+rail_ziegler=pd.read_csv("https://raw.githubusercontent.com/sayedul79/python-control-system/main/dataset/exp8-rail-ziegler-nichols-group-5.csv", sep="\t")
 rzn_zero=rail_ziegler[~(rail_ziegler.Position==0)]
 ziegler_desire1=rzn_zero[(rzn_zero.TimeStamp>=10) & (rzn_zero.TimeStamp<=11.32)]
 rail_ziegler_halfc=rzn_zero[(rzn_zero.TimeStamp>=10) & (rzn_zero.TimeStamp<=11.32)]
@@ -15,7 +15,7 @@ ax1.scatter([0.12, 0.34], [8.38, 7.26], marker="o", color="m")
 ax1.annotate("(0.12,8.38)", xy=(0.12, 8.38), xytext=(0.3, 8.1), arrowprops={"arrowstyle": "->", "color":"m", "linewidth":2}, fontsize=15)
 ax1.annotate("(0.34,7.26)", xy=(0.34, 7.26), xytext=(0.5, 6.5), arrowprops={"arrowstyle": "->", "color":"m", "linewidth":2}, fontsize=15)
 #read rail quarter amplitude decay dataset
-rail_quater=pd.read_csv("D:\L-3 T-2\python-control-system\python-control-system\dataset/exp8-rail-quater-amp-group-5.csv", sep="\t")
+rail_quater=pd.read_csv("https://raw.githubusercontent.com/sayedul79/python-control-system/main/dataset/exp8-rail-quater-amp-group-5.csv", sep="\t")
 rq_zero=rail_quater[~(rail_quater.Position==0)]
 rail_quater_halfc=rq_zero[(rq_zero.TimeStamp>=5) & (rq_zero.TimeStamp<=6.5)]
 rail_quater_halfc["TimeShift"]=rail_quater_halfc.TimeStamp-5
@@ -25,7 +25,7 @@ ax2.scatter([0.17, 0.5], [26.76, 14.58], marker="o", color="m")
 ax2.annotate("(0.17,26.76)", xy=(0.17, 26.76), xytext=(0.3, 22), arrowprops={"arrowstyle": "->", "color":"m", "linewidth":2}, fontsize=15)
 ax2.annotate("(0.5,14.58)", xy=(0.5, 14.58), xytext=(0.8, 12), arrowprops={"arrowstyle": "->", "color":"m", "linewidth":2}, fontsize=15)
 #read rail significantly damped step response dataset
-rail_damp=pd.read_csv("D:\L-3 T-2\python-control-system\python-control-system\dataset/exp8-rail-sig-damp-group-5.csv", sep="\t")
+rail_damp=pd.read_csv("https://raw.githubusercontent.com/sayedul79/python-control-system/main/dataset/exp8-rail-sig-damp-group-5.csv", sep="\t")
 rd_zero=rail_damp[~(rail_damp.Position==0)]
 rail_damp_halfc=rd_zero[(rd_zero.TimeStamp>=5) & (rd_zero.TimeStamp<=5.5)]
 rail_damp_halfc["TimeShift"]=rail_damp_halfc.TimeStamp-5
@@ -33,7 +33,7 @@ fig, ax3=plt.subplots()
 ax3.plot(rail_damp_halfc.TimeShift, rail_damp_halfc.Position, lw=2, color="DarkBlue")
 
 #read ziegler nichols method dataset for rail
-motor_ziegler=pd.read_csv("D:\L-3 T-2\python-control-system\python-control-system\dataset/exp8-motor-ziegler-nichols-group-5.csv", sep="\t")
+motor_ziegler=pd.read_csv("https://raw.githubusercontent.com/sayedul79/python-control-system/main/dataset/exp8-motor-ziegler-nichols-group-5.csv", sep="\t")
 motor_ziegler_halfc=motor_ziegler[(motor_ziegler.TimeStamp>=50) & (motor_ziegler.TimeStamp<=50.6)]
 motor_ziegler_halfc["TimeShift"]=motor_ziegler_halfc.TimeStamp-50
 fig, ax4=plt.subplots()
@@ -42,7 +42,7 @@ ax4.scatter([0.08, 0.27], [6.9, 4.12], marker="o", color="m")
 ax4.annotate("(0.08,6.9)", xy=(0.08, 6.9), xytext=(0.15, 6), arrowprops={"arrowstyle": "->", "color":"m", "linewidth":2}, fontsize=15)
 ax4.annotate("(0.27,4.12)", xy=(0.27, 4.12), xytext=(0.35, 3), arrowprops={"arrowstyle": "->", "color":"m", "linewidth":2}, fontsize=15)
 #read motor quarter amplitude decay dataset
-motor_quater=pd.read_csv("D:\L-3 T-2\python-control-system\python-control-system\dataset/exp8-motor-quater-amp-group-5.csv", sep="\t")
+motor_quater=pd.read_csv("https://raw.githubusercontent.com/sayedul79/python-control-system/main/dataset/exp8-motor-quater-amp-group-5.csv", sep="\t")
 mq_zero=motor_quater[~(motor_quater.Position==0)]
 motor_quater_halfc=mq_zero[(mq_zero.TimeStamp>=5) & (mq_zero.TimeStamp<=6.5)]
 motor_quater_halfc["TimeShift"]=motor_quater_halfc.TimeStamp-5
@@ -52,7 +52,7 @@ ax5.scatter([0.11, 0.34], [21.86, 11.16], marker="o", color="m")
 ax5.annotate("(0.11,21.86)", xy=(0.11, 21.86), xytext=(0.3, 17), arrowprops={"arrowstyle": "->", "color":"m", "linewidth":2}, fontsize=15)
 ax5.annotate("(0.34,11.16)", xy=(0.34, 11.16), xytext=(0.5, 5), arrowprops={"arrowstyle": "->", "color":"m", "linewidth":2}, fontsize=15)
 #read motor significantly damped step response dataset
-motor_damp=pd.read_csv("D:\L-3 T-2\python-control-system\python-control-system\dataset/exp8-motor-sig-damp-group-5.csv", sep="\t")
+motor_damp=pd.read_csv("https://raw.githubusercontent.com/sayedul79/python-control-system/main/dataset/exp8-motor-sig-damp-group-5.csv", sep="\t")
 md_noise=motor_damp.loc[262:, :]
 motor_damp_halfc=md_noise[(md_noise.TimeStamp>=5) & (md_noise.TimeStamp<=5.5)]
 motor_damp_halfc["TimeShift"]=motor_damp_halfc.TimeStamp-5
