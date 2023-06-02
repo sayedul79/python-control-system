@@ -32,7 +32,7 @@ This project requires the following Python packages: `numpy`, `pandas`, `matplot
 ### Lab Work
 | No. | Experiment Name |
 |-----|----------------------------------------------------------------|
-|01|Equipment and Software Familiarization [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/Experiment%201_2.pdf) |
+|01|Equipment and Software Familiarization [[labsheet]](https://github.com/sayedul79/python-control-system/blob/main/pdf/Experiment%201_2.pdf) |
 |02|Open Loop Servo Motor Static Characteristics [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/Experiment%202.pdf)|
 |03|Open Loop Servo Motor Transient Characteristics [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/experiment%203.pdf)|
 |04|Servo Closed Loop Speed Control- Steady State Characteristics [labsheet](https://github.com/sayedul79/python-control-system/blob/main/pdf/experiment%204.pdf)|
