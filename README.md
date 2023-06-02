@@ -6,6 +6,8 @@
 [Jupyter norebook](https://github.com/sayedul79/python-control-system/blob/3bff85e01fb2f8a8b69b9d1d10192fd7eedd4bb5/laplace_transform.ipynb)
 ### Transfer Function
 [Jupyter notebook](https://github.com/sayedul79/python-control-system/blob/main/Transfer-function.ipynb)
+### Time domain Response of a First Order System
+[Jupyter notebook](https://github.com/sayedul79/python-control-system/blob/main/Time-Response-first-order-system.ipynb)
 ### Stability Analysis
 [Jupyter notebook](https://github.com/sayedul79/python-control-system/blob/main/stability-analysis.ipynb)
 ### Root Locus
