@@ -19,6 +19,8 @@ This project requires the following Python packages: `numpy`, `pandas`, `matplot
 [Jupyter notebook](https://github.com/sayedul79/python-control-system/blob/main/Time-Response-first-order-system.ipynb)
 ### Time Domain Response of Second Order System
 [Jupyter notebook](https://github.com/sayedul79/python-control-system/blob/main/time-response-second-order-system.ipynb)
+### Step, Impulse and Forced Response
+[Jupyter notebook](https://colab.research.google.com/github/sayedul79/python-control-system/blob/main/Transfer-function.ipynb)
 ### Stability Analysis
 [Jupyter notebook](https://github.com/sayedul79/python-control-system/blob/main/stability-analysis.ipynb)
 ### Root Locus
@@ -26,6 +28,7 @@ This project requires the following Python packages: `numpy`, `pandas`, `matplot
 ### Assignment on EEE-363
 [Question](https://github.com/sayedul79/python-control-system/blob/main/pdf/Assignment%202%20EEE%20363%20Batch%2017.pdf)
 [Code](https://github.com/sayedul79/python-control-system/blob/main/problem2(a)_2(b).py)
+[Jupyter notebook](https://github.com/sayedul79/python-control-system/blob/main/1702079_assignment.ipynb)
 ### Lab Work
 | No. | Experiment Name |
 |-----|----------------------------------------------------------------|
